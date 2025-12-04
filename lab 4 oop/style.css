@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #1e1e1e;
+  box-shadow: 0 2px 5px #0006;
+}
+
+.header-btn {
+  background: #2d2d2d;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.header-btn:hover {
+  background: #00bcd4;
+  color: #000;
+}
+
+main.app-main {
+  display: flex;
+  height: 500px;
+}
+
+#leftPanel,
+#content,
+#rightPanel {
+  width: 33%;
+  padding: 14px;
+  overflow: auto;
+}
+
+#leftPanel { 
+ background: #8f8d8d;
+}
+#rightPanel {
+  background: #484444;
+}
+
+#content {
+  background: #222;
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+  background: #181818;
+  box-shadow: 0 -2px 5px #0006;
+}
+
+#footer-current-users {
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  background: #00bcd4;
+  color: #000;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  box-shadow: 0 2px 6px #0008;
+}
+
+.loader {
+  border: 6px solid #2d2d2d;
+  border-top: 6px solid #00bcd4;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  color: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px #0009;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #333;
+  text-align: left;
+}
+
+th {
+  background: #0097a7;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+th:hover {
+  background: #00bcd4;
+}
+
+tr:nth-child(odd) {
+  background: #181818;
+}
+
+tr:nth-child(even) {
+  background: #242424;
+}
+
+tr:hover {
+  background: #333;
+}
+
+.highlight {
+  background: #3a4f1b !important;
+  color: #fff;
+}
+
+.btn {
+  background: #333;
+  color: #e0e0e0;
+  border: 1px solid #555;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #00bcd4;
+  color: #000;
+}
+
+.btn-danger {
+  background: #c62828;
+  color: #fff;
+  border: none;
+}
+
+.btn-danger:hover {
+  background: #ef5350;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  background: #2d2d2d;
+  border: 1px solid #444;
+  color: #e0e0e0;
+  border-radius: 6px;
+}
+
+label {
+  color: #ccc;
+}
